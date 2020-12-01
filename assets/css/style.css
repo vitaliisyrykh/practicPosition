@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --primaryNavColor:  #47986D;
+  --secondaryNavColor: #3C805B;
+}
+.list{
+  list-style: none;
+  font-size: 0;
+  
+}
+.listItem{
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  position: relative;
+  background-color: var(--primaryNavColor);
+
+  
+}
+
+.subList{
+  position: absolute;
+  display: none;
+  padding: 0;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.subListItem{
+  background-color: var(--primaryNavColor);
+}
+.listItem:hover{
+  background-color: var(--secondaryNavColor);
+}
+.listItem:hover > .subList{
+  display: block;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+  border: 1px solid var(--secondaryNavColor);
+}
