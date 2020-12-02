@@ -32,9 +32,10 @@
 }
 
 .subListItem{
+  position: relative;
   background-color: var(--primaryNavColor);
 }
-.listItem:hover{
+.listItem:hover, .subListItem:hover, .womanSubListItem:hover{
   background-color: var(--secondaryNavColor);
 }
 .listItem:hover > .subList{
@@ -49,3 +50,12 @@
   width: 100%;
   border: 1px solid var(--secondaryNavColor);
 }
+.womanSubList{
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left:100%;
+  background-color: var(--primaryNavColor);
+
+}
+
